@@ -2,7 +2,6 @@
 
 Basic Algorithm with JAVA
 
-
 1.sort文件夹下是常见的排序算法
 
 	Code_00_BubbleSort：冒泡排序；
@@ -52,3 +51,18 @@ Basic Algorithm with JAVA
 
 	Code_13_CopyListWithRandom:复制含有随机指针节点的链表
   
+ 3.tree文件夹是关于二叉树的算法
+ 
+ 	Code_01_PreInPosTraversal:二叉树遍历，递归和非递归两种方式
+
+	Code_02_PrintBinaryTree:打印一颗二叉树
+
+	Code_03_SuccessorNode:中序遍历，找后继节点
+
+	Code_04_SerializeAndReconstructTree:序列化与反序列化，先序遍历，按层序列化
+
+	Code_06_IsBalancedTree：平衡树
+
+	Code_07_IsBSTAndCBT：如何判断一棵树是搜索二叉树？BST  BINARY SEARCH TREE，中序遍历是升序的树
+
+	Code_08_CompleteTreeNodeNumber：已知一个完全二叉树，求其节点个数？
