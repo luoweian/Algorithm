@@ -41,4 +41,14 @@ Basic Algorithm with JAVA
 	Code_06_PrintMatrixSpiralOrder:转圈打印矩阵数字
 
 	Code_07_ReverseList:分别实现反转单向链表和反转双向链表的函数
+	
+	Code_08_ZigZagPrintMatrix:之字形打印矩阵
+
+	Code_09_FindNumInSortedMatrix:在行跟列都排好的矩阵中找数
+
+	Code_11_IsPalindromeList:判断一个链表是否是回文
+
+	Code_12_SmallerEqualBigger:将单向链表按照某值划分成左边小、中间相等、右边大的形式
+
+	Code_13_CopyListWithRandom:复制含有随机指针节点的链表
   
