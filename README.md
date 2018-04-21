@@ -66,3 +66,29 @@ Basic Algorithm with JAVA
 	Code_07_IsBSTAndCBT：如何判断一棵树是搜索二叉树？BST  BINARY SEARCH TREE，中序遍历是升序的树
 
 	Code_08_CompleteTreeNodeNumber：已知一个完全二叉树，求其节点个数？
+	
+ 3.hash文件夹是关于hash算法，并查集
+ 
+ 	Code_03_Islands:岛问题
+
+	Code_04_UnionFind:1.查两个元素是不是在同一个集合isSameSet 2.合并两个集合，A所在的集合与B所在的集合合并
+	
+ 4.trieTreeAndGreedyAlgorithm文件夹是关于前缀树，哈夫曼编码，贪心策略
+ 
+ 	Code_01_TrieTree:前缀树，插入，查询，删除，仅限制与a-z字母的单词
+
+	Code_02_Less_Money:一块金条切成两半，需要花费和长度数值一样的铜板的。(哈夫曼编码)
+
+	Code_03_IPO:做项目问题，包括成本cost，利润profit.成本放入小根堆，利润放入大根堆，先从小根堆解锁项目，再去大根堆做项目
+
+	Code_05_LowestLexicography:最小字典需排序策略(a + b).compareTo(b + a)
+
+ 5.dynamicProgramming文件夹是关于动态规划的算法
+ 
+ 	Code_01_Factorial:求n!
+
+	Code_02_Hanoi:汉诺塔问题，暴力递归
+
+	Code_05_Cow:母牛一年生一个崽，崽三年后能生崽，问N年后有多少只崽？
+
+ 	
