@@ -1,5 +1,8 @@
 package tree;
 
+/**
+ * 平衡树
+ */
 public class Code_06_IsBalancedTree {
 
 	public static class Node {

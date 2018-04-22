@@ -1,5 +1,9 @@
 package tree;
 
+/**
+ * 已知一个完全二叉树，求其节点个数？
+ *
+ */
 public class Code_08_CompleteTreeNodeNumber {
 
 	public static class Node {

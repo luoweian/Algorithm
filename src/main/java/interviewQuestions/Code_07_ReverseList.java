@@ -22,6 +22,7 @@ public class Code_07_ReverseList {
 			next = head.next;
 			head.next = pre;
 			pre = head;
+
 			head = next;
 		}
 		return pre;
@@ -45,6 +46,7 @@ public class Code_07_ReverseList {
 			head.next = pre;
 			head.last = next;
 			pre = head;
+
 			head = next;
 		}
 		return pre;

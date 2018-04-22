@@ -2,8 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="050f4aed-f007-4d24-9134-5a9aeaaf9f5f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/ArrayToQueue.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/ArrayToQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/ArrayToStack.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/ArrayToStack.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_01_Array_To_Stack_Queue$ArrayQueue.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_01_Array_To_Stack_Queue$ArrayQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_01_Array_To_Stack_Queue$ArrayStack.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_01_Array_To_Stack_Queue$ArrayStack.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_01_Array_To_Stack_Queue.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_01_Array_To_Stack_Queue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_02_GetMinStack$MyStack1.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_02_GetMinStack$MyStack1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_02_GetMinStack$MyStack2.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_02_GetMinStack$MyStack2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_02_GetMinStack.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_02_GetMinStack.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_03_StackAndQueueConvert$TwoQueuesStack.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_03_StackAndQueueConvert$TwoQueuesStack.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_03_StackAndQueueConvert$TwoStacksQueue.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_03_StackAndQueueConvert$TwoStacksQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_03_StackAndQueueConvert.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_03_StackAndQueueConvert.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$Cat.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$Cat.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$Dog.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$Dog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$DogCatQueue.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$DogCatQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$Pet.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$Pet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$PetEnterQueue.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue$PetEnterQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_04_DogCatQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_05_RotateMatrix.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_05_RotateMatrix.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_06_PrintMatrixSpiralOrder.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_06_PrintMatrixSpiralOrder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_07_ReverseList$DoubleNode.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_07_ReverseList$DoubleNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_07_ReverseList$Node.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_07_ReverseList$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_07_ReverseList.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_07_ReverseList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_08_ZigZagPrintMatrix.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_08_ZigZagPrintMatrix.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_09_FindNumInSortedMatrix.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_09_FindNumInSortedMatrix.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_10_PrintCommonPart$Node.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_10_PrintCommonPart$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_10_PrintCommonPart.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_10_PrintCommonPart.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_11_IsPalindromeList$Node.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_11_IsPalindromeList$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_11_IsPalindromeList.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_11_IsPalindromeList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_12_SmallerEqualBigger$Node.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_12_SmallerEqualBigger$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_12_SmallerEqualBigger.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_12_SmallerEqualBigger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_13_CopyListWithRandom$Node.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_13_CopyListWithRandom$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_13_CopyListWithRandom.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_13_CopyListWithRandom.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_14_FindFirstIntersectNode$Node.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_14_FindFirstIntersectNode$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_14_FindFirstIntersectNode.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_14_FindFirstIntersectNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_15_FindOneLessValueIndex.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/Code_15_FindOneLessValueIndex.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/interviewQuestions/GetMinStack.class" afterPath="$PROJECT_DIR$/target/classes/interviewQuestions/GetMinStack.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_00_BubbleSort.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_00_BubbleSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_01_InsertionSort.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_01_InsertionSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_02_SelectionSort.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_02_SelectionSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_03_HeapSort.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_03_HeapSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_04_QuickSort.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_04_QuickSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_05_MergeSort.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_05_MergeSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_06_BucketSort.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_06_BucketSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_07_RadixSort.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_07_RadixSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_08_NetherlandsFlag.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_08_NetherlandsFlag.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$AgeAscendingComparator.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$AgeAscendingComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$AgeDescendingComparator.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$AgeDescendingComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$IdAscendingComparator.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$IdAscendingComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$IdDescendingComparator.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$IdDescendingComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$Student.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator$Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_09_Comparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_10_GetAllNotIncluded.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_10_GetAllNotIncluded.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_11_MaxGap.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_11_MaxGap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sort/Code_12_SmallSum.class" afterPath="$PROJECT_DIR$/target/classes/sort/Code_12_SmallSum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_01_PreInPosTraversal$Node.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_01_PreInPosTraversal$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_01_PreInPosTraversal.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_01_PreInPosTraversal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_02_PrintBinaryTree$Node.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_02_PrintBinaryTree$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_02_PrintBinaryTree.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_02_PrintBinaryTree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_03_SuccessorNode$Node.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_03_SuccessorNode$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_03_SuccessorNode.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_03_SuccessorNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_04_SerializeAndReconstructTree$Node.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_04_SerializeAndReconstructTree$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_04_SerializeAndReconstructTree.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_04_SerializeAndReconstructTree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_05_PaperFolding.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_05_PaperFolding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_06_IsBalancedTree$Node.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_06_IsBalancedTree$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_06_IsBalancedTree.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_06_IsBalancedTree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_07_IsBSTAndCBT$Node.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_07_IsBSTAndCBT$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_07_IsBSTAndCBT.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_07_IsBSTAndCBT.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_08_CompleteTreeNodeNumber$Node.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_08_CompleteTreeNodeNumber$Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/tree/Code_08_CompleteTreeNodeNumber.class" afterPath="$PROJECT_DIR$/target/classes/tree/Code_08_CompleteTreeNodeNumber.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ArrayToStack.class" afterPath="$PROJECT_DIR$/target/test-classes/ArrayToStack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/SortTest1.class" afterPath="$PROJECT_DIR$/target/test-classes/SortTest1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithm.iml" afterPath="$PROJECT_DIR$/Algorithm.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_07_ReverseList.java" afterPath="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_07_ReverseList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tree/Code_04_SerializeAndReconstructTree.java" afterPath="$PROJECT_DIR$/src/main/java/tree/Code_04_SerializeAndReconstructTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tree/Code_05_PaperFolding.java" afterPath="$PROJECT_DIR$/src/main/java/tree/Code_05_PaperFolding.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tree/Code_06_IsBalancedTree.java" afterPath="$PROJECT_DIR$/src/main/java/tree/Code_06_IsBalancedTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tree/Code_07_IsBSTAndCBT.java" afterPath="$PROJECT_DIR$/src/main/java/tree/Code_07_IsBSTAndCBT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tree/Code_08_CompleteTreeNodeNumber.java" afterPath="$PROJECT_DIR$/src/main/java/tree/Code_08_CompleteTreeNodeNumber.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,40 +94,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Code_01_PreInPosTraversal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_01_PreInPosTraversal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="126" column="5" lean-forward="true" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Code_02_PrintBinaryTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_02_PrintBinaryTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Code_03_SuccessorNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_03_SuccessorNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Code_05_PaperFolding.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_05_PaperFolding.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FaceBook.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/FaceBook.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -56,21 +117,91 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Code_07_IsBSTAndCBT.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_07_IsBSTAndCBT.java">
+      <file leaf-file-name="Code_04_Print_All_Permutations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_04_Print_All_Permutations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="100">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Code_04_SerializeAndReconstructTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_04_SerializeAndReconstructTree.java">
+      <file leaf-file-name="Code_05_Cow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_05_Cow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="175">
+              <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code_07_MinPath.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_07_MinPath.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinRouteToRightConer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/MinRouteToRightConer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code_07_ReverseList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_07_ReverseList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code_08_ZigZagPrintMatrix.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_08_ZigZagPrintMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code_06_ReverseStackUsingRecursive.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_06_ReverseStackUsingRecursive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code_08_Money_Problem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_08_Money_Problem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Code_09_Knapsack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_09_Knapsack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -88,7 +219,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>arr1</find>
+      <find>word</find>
     </findStrings>
+    <replaceStrings>
+      <replace>res</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -122,7 +257,6 @@
         <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_04_DogCatQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_06_PrintMatrixSpiralOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_05_RotateMatrix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_07_ReverseList.java" />
         <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_08_ZigZagPrintMatrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_09_FindNumInSortedMatrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_10_PrintCommonPart.java" />
@@ -130,11 +264,30 @@
         <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_12_SmallerEqualBigger.java" />
         <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_13_CopyListWithRandom.java" />
         <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_14_FindFirstIntersectNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tree/Code_05_PaperFolding.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/Code_01_PreInPosTraversal.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/Code_02_PrintBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/Code_03_SuccessorNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/Code_04_SerializeAndReconstructTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tree/Code_06_IsBalancedTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tree/Code_07_IsBSTAndCBT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tree/Code_08_CompleteTreeNodeNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tree/Code_05_PaperFolding.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hash/Code_02_RandomPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hash/Code_01_HashMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hash/Code_04_UnionFind.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hash/Code_03_Islands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trieTree/Code_03_IPO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trieTree/Code_01_TrieTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trieTree/Code_05_LowestLexicography.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trieTreeAndGreedyAlgorithm/Code_02_Less_Money.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trieTreeAndGreedyAlgorithm/Code_03_IPO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_01_Factorial.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_02_Hanoi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamicProgramming/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_05_Cow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamicProgramming/MinRouteToRightConer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamicProgramming/ArrayNumberSumEqualN.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interviewQuestions/Code_07_ReverseList.java" />
       </list>
     </option>
   </component>
@@ -152,10 +305,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="288" />
-    <option name="y" value="313" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="683" />
-    <option name="height" value="758" />
+    <option name="height" value="387" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -291,7 +444,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -307,8 +462,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,7 +495,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="interviewQuestions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -359,8 +514,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,6 +529,9 @@
       <recent name="D:\IDEAU\Algorithm\src\main\java\sort" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEAU\Algorithm\src\main\java\dynamicProgramming" />
+      <recent name="D:\IDEAU\Algorithm\src\main\java\trieTree" />
+      <recent name="D:\IDEAU\Algorithm\src\main\java\hash" />
       <recent name="D:\IDEAU\Algorithm\src\main\java\tree" />
       <recent name="D:\IDEAU\Algorithm\src\main\java\interviewQuestions" />
     </key>
@@ -390,15 +548,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Code_02_PrintBinaryTree">
-    <configuration name="Code_01_PreInPosTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Code_05_PaperFolding">
+    <configuration name="ArrayNumberSumEqualN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dynamicProgramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="dynamicProgramming.ArrayNumberSumEqualN" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Algorithm" />
+      <envs />
+    </configuration>
+    <configuration name="Code_05_PaperFolding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="tree.Code_01_PreInPosTraversal" />
+      <option name="MAIN_CLASS_NAME" value="tree.Code_05_PaperFolding" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -410,14 +587,14 @@
       <module name="Algorithm" />
       <envs />
     </configuration>
-    <configuration name="Code_02_PrintBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Code_05_RotateMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="interviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="tree.Code_02_PrintBinaryTree" />
+      <option name="MAIN_CLASS_NAME" value="interviewQuestions.Code_05_RotateMatrix" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -429,14 +606,14 @@
       <module name="Algorithm" />
       <envs />
     </configuration>
-    <configuration name="Code_11_MaxGap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Code_07_ReverseList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="sort.*" />
+          <option name="PATTERN" value="interviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="sort.Code_11_MaxGap" />
+      <option name="MAIN_CLASS_NAME" value="interviewQuestions.Code_07_ReverseList" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -448,45 +625,24 @@
       <module name="Algorithm" />
       <envs />
     </configuration>
-    <configuration name="SortTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Algorithm" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dynamicProgramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="dynamicProgramming.Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SortTest1" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SortTest1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Algorithm" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SortTest1" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
       <envs />
-      <patterns />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -570,19 +726,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SortTest1.test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SortTest1" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Code_11_MaxGap" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Code_01_PreInPosTraversal" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Code_02_PrintBinaryTree" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ArrayNumberSumEqualN" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Code_05_RotateMatrix" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Code_07_ReverseList" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Code_05_PaperFolding" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Code_02_PrintBinaryTree" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Code_01_PreInPosTraversal" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Code_11_MaxGap" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SortTest1" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SortTest1.test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Code_05_PaperFolding" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Code_07_ReverseList" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Code_05_RotateMatrix" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ArrayNumberSumEqualN" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -600,7 +756,15 @@
       <workItem from="1522631782806" duration="8351000" />
       <workItem from="1522657586332" duration="11014000" />
       <workItem from="1523187387809" duration="5974000" />
-      <workItem from="1523443830409" duration="4460000" />
+      <workItem from="1523443830409" duration="5095000" />
+      <workItem from="1523603143905" duration="13377000" />
+      <workItem from="1523773319247" duration="3359000" />
+      <workItem from="1523789976472" duration="2017000" />
+      <workItem from="1523846197614" duration="8759000" />
+      <workItem from="1524102985606" duration="6349000" />
+      <workItem from="1524187239295" duration="8841000" />
+      <workItem from="1524273551659" duration="4929000" />
+      <workItem from="1524293124144" duration="10208000" />
     </task>
     <servers />
   </component>
@@ -637,7 +801,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61636000" />
+    <option name="totallyTimeSpent" value="120110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -650,26 +814,26 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17774086" sideWeight="0.505618" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2038835" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22815534" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22617246" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17774086" sideWeight="0.49438202" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37540454" sideWeight="0.49438202" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40614888" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -685,19 +849,19 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17774086" sideWeight="0.49438202" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37540454" sideWeight="0.49438202" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31502423" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31391585" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29886913" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37540454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4141252" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40614888" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -710,44 +874,156 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dynamicProgramming/ArrayNumberSumEqualN.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_01_PreInPosTraversal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/Code_09_Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="126" column="5" lean-forward="true" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+        <state relative-caret-position="100">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_02_PrintBinaryTree.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/Code_10_GetAllNotIncluded.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="-2075">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_03_SuccessorNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_04_SerializeAndReconstructTree.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/Code_11_MaxGap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_05_PaperFolding.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/Code_12_SmallSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2382">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/ArrayToQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_01_Array_To_Stack_Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_02_GetMinStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_03_StackAndQueueConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_04_DogCatQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_05_RotateMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_06_PrintMatrixSpiralOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_09_FindNumInSortedMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_10_PrintCommonPart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_11_IsPalindromeList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_12_SmallerEqualBigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_13_CopyListWithRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_14_FindFirstIntersectNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_15_FindOneLessValueIndex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -755,10 +1031,266 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/GetMinStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_01_PreInPosTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_02_PrintBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="69" column="38" lean-forward="true" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_03_SuccessorNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_04_SerializeAndReconstructTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_06_IsBalancedTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_07_IsBSTAndCBT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="295">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_08_CompleteTreeNodeNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Code_05_PaperFolding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hash/Code_01_HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hash/Code_02_RandomPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hash/Code_03_Islands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hash/Code_04_UnionFind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trieTreeAndGreedyAlgorithm/Code_01_TrieTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trieTreeAndGreedyAlgorithm/Code_02_Less_Money.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trieTreeAndGreedyAlgorithm/Code_03_IPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trieTreeAndGreedyAlgorithm/Code_04_MadianQuick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trieTreeAndGreedyAlgorithm/Code_05_LowestLexicography.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trieTreeAndGreedyAlgorithm/Code_06_BestArrange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/ArrayNumberSumEqualN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_01_Factorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_02_Hanoi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_03_Print_All_Subsquences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_04_Print_All_Permutations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_05_Cow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_06_ReverseStackUsingRecursive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_07_MinPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_08_Money_Problem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/Code_09_Knapsack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/FaceBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamicProgramming/MinRouteToRightConer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_07_ReverseList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interviewQuestions/Code_08_ZigZagPrintMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="10" />
           <folding />
         </state>
       </provider>

@@ -3,6 +3,15 @@ package tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 如何判断一棵树是搜索二叉树？BST  BINARY SEARCH TREE
+ * 中序遍历是升序的树
+ *
+ * 判断一棵树是否完全二叉树？ CBT COMPLETE BINARY TREE
+ * 首先按层遍历，就是123456这样遍历
+ * 1.一个节点有右节点，但是没有左节点的一定不是完全二叉树
+ * 2.一个节点有左节点没右节点，或左右节点都没，后面所遇到的节点必须都是页节点，否则一定不是完全二叉树
+ */
 public class Code_07_IsBSTAndCBT {
 
 	public static class Node {
@@ -46,6 +55,7 @@ public class Code_07_IsBSTAndCBT {
 		return res;
 	}
 
+	//判断是否完全二叉树
 	public static boolean isCBT(Node head) {
 		if (head == null) {
 			return true;

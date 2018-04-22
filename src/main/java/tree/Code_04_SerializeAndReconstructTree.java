@@ -5,6 +5,7 @@ import java.util.Queue;
 
 /**
  * 序列化与反序列化，先序遍历
+ * 按层序列化
  */
 public class Code_04_SerializeAndReconstructTree {
 
@@ -74,6 +75,7 @@ public class Code_04_SerializeAndReconstructTree {
 		return res;
 	}
 
+	//按层序列化
 	public static Node reconByLevelString(String levelStr) {
 		String[] values = levelStr.split("!");
 		int index = 0;
