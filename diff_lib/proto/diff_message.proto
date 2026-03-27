@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package diff;
+
+option java_package = "com.diff.model";
+option java_outer_classname = "DiffProto";
+
+// 数据侧：旧逻辑 or 新逻辑
+enum Side {
+    SIDE_UNKNOWN = 0;
+    OLD = 1;
+    NEW = 2;
+}
+
+// 基础数据类型
+enum ValueType {
+    VALUE_UNKNOWN = 0;
+    INT32    = 1;
+    INT64    = 2;
+    UINT32   = 3;
+    UINT64   = 4;
+    FLOAT32  = 5;
+    FLOAT64  = 6;
+    BOOL     = 7;
+    STRING   = 8;
+    NULL_TYPE = 9;
+    BYTES    = 10;
+    JSON     = 11;  // 递归结构，内部为 JSON 树
+}
+
+// 单个字段
+message DiffField {
+    string    name  = 1;   // 字段名 / JSON path
+    ValueType type  = 2;
+    bytes     value = 3;   // 序列化后的值
+}
+
+// MQ 消息体
+message DiffMessage {
+    string   request_id = 1;
+    string   service    = 2;
+    string   region     = 3;
+    Side     side       = 4;
+    string   key        = 5;   // 数据标识，用于 Flink Join 匹配
+
+    repeated DiffField          fields    = 6;
+    map<string, string>         tags      = 7;
+    int64                       timestamp = 8;
+}
