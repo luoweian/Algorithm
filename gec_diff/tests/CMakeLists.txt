@@ -5,15 +5,15 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-add_executable(diff_lib_test
+add_executable(gec_diff_test
     test_diff_value.cpp
     test_diff_client.cpp
 )
 
-target_link_libraries(diff_lib_test
-    diff_lib
+target_link_libraries(gec_diff_test
+    gec_diff
     GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(diff_lib_test)
+gtest_discover_tests(gec_diff_test)

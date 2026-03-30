@@ -35,20 +35,21 @@ struct DiffValue {
     };
     std::string str; // STRING / BYTES / JSON 共用
 
-    // ---- 工厂方法 ----
-    static DiffValue Int32(int32_t v)       { DiffValue d; d.type = ValueType::INT32;   d.i32 = v; return d; }
-    static DiffValue Int64(int64_t v)       { DiffValue d; d.type = ValueType::INT64;   d.i64 = v; return d; }
-    static DiffValue UInt32(uint32_t v)     { DiffValue d; d.type = ValueType::UINT32;  d.u32 = v; return d; }
-    static DiffValue UInt64(uint64_t v)     { DiffValue d; d.type = ValueType::UINT64;  d.u64 = v; return d; }
-    static DiffValue Float32(float v)       { DiffValue d; d.type = ValueType::FLOAT32; d.f32 = v; return d; }
-    static DiffValue Float64(double v)      { DiffValue d; d.type = ValueType::FLOAT64; d.f64 = v; return d; }
-    static DiffValue Bool(bool v)           { DiffValue d; d.type = ValueType::BOOL;    d.b   = v; return d; }
-    static DiffValue String(std::string v)  { DiffValue d; d.type = ValueType::STRING;  d.str = std::move(v); return d; }
-    static DiffValue Bytes(std::string v)   { DiffValue d; d.type = ValueType::BYTES;   d.str = std::move(v); return d; }
-    static DiffValue Json(std::string v)    { DiffValue d; d.type = ValueType::JSON;    d.str = std::move(v); return d; }
-    static DiffValue Null()                 { DiffValue d; d.type = ValueType::NULL_TYPE; return d; }
+    // ---- 隐式构造（原生类型自动转换，Write/WriteBatch 无需手动指定类型）----
+    DiffValue()                        : type(ValueType::NULL_TYPE), i64(0) {}
+    DiffValue(int32_t v)               : type(ValueType::INT32),     i32(v) {}
+    DiffValue(int64_t v)               : type(ValueType::INT64),     i64(v) {}
+    DiffValue(uint32_t v)              : type(ValueType::UINT32),    u32(v) {}
+    DiffValue(uint64_t v)              : type(ValueType::UINT64),    u64(v) {}
+    DiffValue(float v)                 : type(ValueType::FLOAT32),   f32(v) {}
+    DiffValue(double v)                : type(ValueType::FLOAT64),   f64(v) {}
+    DiffValue(bool v)                  : type(ValueType::BOOL),      b(v)   {}
+    DiffValue(std::string v)           : type(ValueType::STRING),    i64(0), str(std::move(v)) {}
+    DiffValue(const char* v)           : type(ValueType::STRING),    i64(0), str(v)            {}
 
-    DiffValue() : i64(0) {}
+    // ---- JSON / Bytes 仍需显式标记类型 ----
+    static DiffValue Json(std::string v)  { DiffValue d; d.type = ValueType::JSON;  d.str = std::move(v); return d; }
+    static DiffValue Bytes(std::string v) { DiffValue d; d.type = ValueType::BYTES; d.str = std::move(v); return d; }
 
     const char* TypeName() const {
         switch (type) {

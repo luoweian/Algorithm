@@ -61,8 +61,8 @@ int64_t NowMs() {
 }
 } // namespace
 
-// ---- Write ----
-void DiffClient::Write(
+// ---- WriteImpl（Write 模板的实际实现）----
+void DiffClient::WriteImpl(
     const std::string& request_id,
     const std::string& key,
     Side               side,

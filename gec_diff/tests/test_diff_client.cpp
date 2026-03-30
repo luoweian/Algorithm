@@ -54,14 +54,15 @@ TEST_F(DiffClientTest, EnqueueAndFlush) {
     msg.region       = "ROW";
     msg.side         = Side::OLD;
     msg.key          = "model_score";
-    msg.fields       = {{"ctr_score", DiffValue::Float64(0.12)}};
+    // 隐式构造：double → FLOAT64，无需 DiffValue::Float64(...)
+    msg.fields       = {{"ctr_score", 0.12}};
     msg.tags         = {{"layer", "predict"}};
     msg.timestamp_ms = 1700000000000LL;
 
     EXPECT_TRUE(writer_->Enqueue(msg));
 
     msg.side = Side::NEW;
-    msg.fields = {{"ctr_score", DiffValue::Float64(0.13)}};
+    msg.fields = {{"ctr_score", 0.13}};
     EXPECT_TRUE(writer_->Enqueue(msg));
 
     writer_->Flush();
@@ -101,10 +102,11 @@ TEST_F(DiffClientTest, BatchEnqueue) {
     msg.region     = "ROW";
     msg.side       = Side::OLD;
     msg.key        = "feature_map";
+    // 隐式构造：直接传原生类型，不再需要 DiffValue::Float64(...)
     msg.fields     = {
-        {"ctr_score",   DiffValue::Float64(0.12)},
-        {"cvr_score",   DiffValue::Float64(0.05)},
-        {"final_score", DiffValue::Float64(0.089)},
+        {"ctr_score",   0.12},
+        {"cvr_score",   0.05},
+        {"final_score", 0.089},
     };
     msg.tags         = {{"layer", "model"}};
     msg.timestamp_ms = 1700000000000LL;
