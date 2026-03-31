@@ -5,7 +5,6 @@
 #include <cstdlib>
 #include <mutex>
 #include <random>
-#include <string>
 
 namespace diff {
 
@@ -18,7 +17,7 @@ public:
 };
 
 // =========================================================================
-// 内部辅助
+// 内部辅助（采样 + 时间戳）
 // =========================================================================
 
 namespace {
@@ -42,6 +41,18 @@ const char* GetEnv(const char* key, const char* fallback = "") {
     return (v && v[0]) ? v : fallback;
 }
 
+int GetEnvInt(const char* key, int fallback) {
+    const char* v = std::getenv(key);
+    if (v) { int n = std::atoi(v); if (n > 0) return n; }
+    return fallback;
+}
+
+float GetEnvFloat(const char* key, float fallback) {
+    const char* v = std::getenv(key);
+    if (v) { float f = std::atof(v); if (f >= 0.0f) return f; }
+    return fallback;
+}
+
 } // namespace
 
 // =========================================================================
@@ -49,80 +60,48 @@ const char* GetEnv(const char* key, const char* fallback = "") {
 // =========================================================================
 
 GecDiff* GecDiff::GetInstance() {
-    // 快速路径：未启用时直接返回 nullptr（无锁、无 once overhead）
-    static bool checked = false;
-    static GecDiff* instance = nullptr;
+    static GecDiff*      instance = nullptr;
+    static bool          checked  = false;
+    static std::once_flag flag;
+
     if (checked) return instance;
 
-    static std::once_flag flag;
     std::call_once(flag, [] {
         checked = true;
         const char* enabled = std::getenv("GEC_DIFF_ENABLED");
-        if (!enabled || std::string(enabled) != "1") {
-            instance = nullptr;
-            return;
-        }
+        if (!enabled || std::string(enabled) != "1") return;
 
-        // 从环境变量读取配置
         WriterConfig cfg;
-        cfg.service_name = GetEnv("GEC_DIFF_SERVICE_NAME", "unknown_service");
-        cfg.queue_size   = [] {
-            const char* v = std::getenv("GEC_DIFF_QUEUE_SIZE");
-            if (v) { int n = std::atoi(v); if (n > 0) return n; }
-            return 10000;
-        }();
-        cfg.thread_pool_size = [] {
-            const char* v = std::getenv("GEC_DIFF_THREAD_POOL_SIZE");
-            if (v) { int n = std::atoi(v); if (n > 0) return n; }
-            return 2;
-        }();
+        cfg.service_name     = GetEnv("GEC_DIFF_SERVICE_NAME", "unknown_service");
+        cfg.queue_size       = GetEnvInt("GEC_DIFF_QUEUE_SIZE", 10000);
+        cfg.thread_pool_size = GetEnvInt("GEC_DIFF_THREAD_POOL_SIZE", 2);
 
-        auto* obj = new GecDiff();
+        auto* obj          = new GecDiff();
         obj->service_name_ = cfg.service_name;
         obj->region_       = GetEnv("GEC_DIFF_REGION", "ROW");
-        obj->sample_rate_  = [] {
-            const char* v = std::getenv("GEC_DIFF_SAMPLE_RATE");
-            if (v) { float f = std::atof(v); if (f >= 0.0f) return f; }
-            return 1.0f;
-        }();
-        obj->writer_ = new AsyncWriter(std::move(cfg),
-                                       std::make_unique<StubMQProducer>());
+        obj->sample_rate_  = GetEnvFloat("GEC_DIFF_SAMPLE_RATE", 1.0f);
+        obj->writer_       = new AsyncWriter(std::move(cfg),
+                                             std::make_unique<StubMQProducer>());
         instance = obj;
     });
     return instance;
 }
 
 // =========================================================================
-// 公开 API
+// MQ 写入层（不涉及类型转换，只组装 PendingMessage 并入队）
 // =========================================================================
 
 bool GecDiff::IsEnabled() {
     return GetInstance() != nullptr;
 }
 
-void GecDiff::WriteBase(const std::string& request_id,
-                         const FieldList&   fields,
-                         const Tags&        tags) {
-    BatchInternal(Group::BASE, request_id, fields, tags);
-}
-
-void GecDiff::WriteTest(const std::string& request_id,
-                         const FieldList&   fields,
-                         const Tags&        tags) {
-    BatchInternal(Group::TEST, request_id, fields, tags);
-}
-
-// =========================================================================
-// 内部实现
-// =========================================================================
-
-void GecDiff::WriteInternal(Group              group,
-                              const std::string& request_id,
-                              const std::string& key,
-                              const DiffValue&   value,
-                              const Tags&        tags) {
+void GecDiff::Write(Group              group,
+                    const std::string& request_id,
+                    const std::string& key,
+                    DiffValue          value,
+                    const Tags&        tags) {
     GecDiff* inst = GetInstance();
-    if (!inst) return;  // 未启用，零开销退出
+    if (!inst) return;
     if (!ShouldSample(inst->sample_rate_)) return;
 
     PendingMessage msg;
@@ -131,16 +110,16 @@ void GecDiff::WriteInternal(Group              group,
     msg.region       = inst->region_;
     msg.group        = group;
     msg.key          = key;
-    msg.fields       = {{"", value}};
+    msg.fields       = {{"", std::move(value)}};
     msg.tags         = tags;
     msg.timestamp_ms = NowMs();
     inst->writer_->Enqueue(std::move(msg));
 }
 
-void GecDiff::BatchInternal(Group              group,
-                              const std::string& request_id,
-                              const FieldList&   fields,
-                              const Tags&        tags) {
+void GecDiff::Write(Group              group,
+                    const std::string& request_id,
+                    const FieldList&   fields,
+                    const Tags&        tags) {
     GecDiff* inst = GetInstance();
     if (!inst || fields.empty()) return;
     if (!ShouldSample(inst->sample_rate_)) return;
