@@ -6,11 +6,14 @@
 
 namespace diff {
 
-// 数据侧
-enum class Side {
-    OLD,
-    NEW,
+// 实验分组：BASE = 对照组（旧逻辑），TEST = 实验组（新逻辑）
+enum class Group {
+    BASE,   // 对照组（迁移前 / 旧架构 / 旧特征逻辑）
+    TEST,   // 实验组（迁移后 / 新架构 / 新特征逻辑）
 };
+
+// 向后兼容别名（内部序列化仍用 old/new 标识）
+using Side = Group;
 
 // Diff 比较模式
 enum class DiffMode {
@@ -28,6 +31,8 @@ enum class ArrayDiffMode {
 using Tags = std::unordered_map<std::string, std::string>;
 
 // Diff 配置
+// thread_pool_size 不需在代码里指定：
+//   优先读取环境变量 GEC_DIFF_THREAD_POOL_SIZE，未设置时默认为 1（单后台线程）
 struct DiffConfig {
     std::string mq_endpoint;
     std::string service_name;
@@ -42,6 +47,10 @@ struct DiffConfig {
     std::vector<std::string> ignore_paths; // 忽略的 JSON 路径，如 /timestamp
 
     int         async_queue_size  = 10000; // 异步写入队列大小
+
+    // 线程池大小：0 表示从环境变量 GEC_DIFF_THREAD_POOL_SIZE 读取（推荐）
+    // 生产部署只需 export GEC_DIFF_THREAD_POOL_SIZE=4，无需改代码
+    int         thread_pool_size  = 0;
 };
 
 // Diff 操作类型（Flink 输出使用）

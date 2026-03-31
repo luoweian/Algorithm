@@ -6,85 +6,109 @@
 #include <string>
 #include <vector>
 #include <memory>
-#include <initializer_list>
 
 namespace diff {
 
-// 批量写入的字段列表
+// 批量写入的字段列表（隐式构造，无需手动 DiffValue::Float64 等）
 using FieldList = std::vector<std::pair<std::string, DiffValue>>;
 
-class AsyncWriter; // 前向声明
+class DiffClient;
+class AsyncWriter;
 
-// DiffClient：单例，全局初始化一次，线程安全
-class DiffClient {
+// ---------------------------------------------------------------------------
+// DiffScope：单次请求的写入上下文
+//
+// 通过 DiffClient::Get().NewScope(request_id, side, tags) 创建。
+// 用户只需传 key + value，request_id / side / tags 均在 Scope 内部管理。
+//
+// 典型用法：
+//   auto old_scope = DiffClient::Get().NewScope(request_id, Side::OLD,
+//                       {{"scene", "rank"}, {"layer", "feature"}});
+//   old_scope.Write("ctr_score", 0.12);
+//   old_scope.Write("uid",       12345);
+//   old_scope.Write("is_vip",    true);
+//   old_scope.Write("feat_json", DiffValue::Json(json_str)); // JSON 需显式
+//
+//   // 多字段一次性写入（单条 MQ 消息，更高效）
+//   old_scope.WriteBatch("feature_map", {
+//       {"ctr",  0.12},
+//       {"cvr",  0.05},
+//       {"uid",  12345},
+//   });
+// ---------------------------------------------------------------------------
+class DiffScope {
 public:
-    // 初始化（进程启动时调用一次）
-    static bool Init(DiffConfig config);
-
-    // 销毁（进程退出前调用）
-    static void Shutdown();
-
-    // 获取单例
-    static DiffClient& Get();
-
-    // 写入单个值（模板：自动推断类型，无需手动指定 DiffValue::Float64 等）
-    // 支持所有原生类型：int32_t, int64_t, uint32_t, uint64_t,
-    //                   float, double, bool, std::string, const char*
-    // JSON 类型仍需显式：DiffValue::Json(str)
-    //
-    // 示例：
-    //   Write(req_id, "ctr_score", Side::OLD, 0.12, tags);
-    //   Write(req_id, "user_id",   Side::OLD, 12345, tags);
-    //   Write(req_id, "is_vip",    Side::OLD, true, tags);
-    //   Write(req_id, "features",  Side::OLD, DiffValue::Json(json_str), tags);
+    // 写入单个 key-value（类型自动推断）
+    // extra_tags 会与 Scope 的 base_tags 合并（extra_tags 优先）
     template<typename T>
-    void Write(
-        const std::string& request_id,
-        const std::string& key,
-        Side               side,
-        T&&                value,
-        const Tags&        tags = {}
-    ) {
-        WriteImpl(request_id, key, side, DiffValue(std::forward<T>(value)), tags);
+    DiffScope& Write(const std::string& key, T&& value,
+                     const Tags& extra_tags = {}) {
+        WriteImpl(key, DiffValue(std::forward<T>(value)), extra_tags);
+        return *this;
     }
 
-    // 批量写入（减少 MQ 消息数，推荐用于多字段场景）
-    // FieldList 元素靠隐式构造自动匹配类型，无需手动包装：
-    //
-    // 示例：
-    //   WriteBatch(req_id, "model", Side::OLD, {
-    //       {"ctr_score",  0.12},          // double  → FLOAT64
-    //       {"cvr_score",  0.05f},         // float   → FLOAT32
-    //       {"user_id",    12345},         // int     → INT32
-    //       {"is_vip",     true},          // bool    → BOOL
-    //       {"user_name",  "alice"},       // string  → STRING
-    //       {"feat_json",  DiffValue::Json(json_str)},  // JSON 需显式
-    //   }, tags);
-    void WriteBatch(
-        const std::string& request_id,
-        const std::string& key,
-        Side               side,
-        const FieldList&   fields,
-        const Tags&        tags = {}
-    );
+    // 批量写入多个字段（单条 MQ 消息，推荐用于特征 Map 等多字段场景）
+    DiffScope& WriteBatch(const std::string& key, const FieldList& fields,
+                          const Tags& extra_tags = {});
 
-    // 当前配置（只读）
+private:
+    friend class DiffClient;
+
+    DiffScope(DiffClient& client,
+              std::string  request_id,
+              Side         side,
+              Tags         base_tags);
+
+    void WriteImpl(const std::string& key,
+                   const DiffValue&   value,
+                   const Tags&        extra_tags);
+
+    Tags MergeTags(const Tags& extra_tags) const;
+
+    DiffClient&  client_;
+    std::string  request_id_;
+    Side         side_;
+    Tags         base_tags_;
+};
+
+// ---------------------------------------------------------------------------
+// DiffClient：全局单例，进程启动时 Init 一次
+// ---------------------------------------------------------------------------
+class DiffClient {
+public:
+    static bool    Init(DiffConfig config);
+    static void    Shutdown();
+    static DiffClient& Get();
+
+    // 创建写入 Scope（推荐入口）
+    // request_id : 用于 Flink Join 的关联键
+    // side       : Side::OLD（旧逻辑） 或 Side::NEW（新逻辑）
+    // base_tags  : 本次请求的公共标签（scene / layer / exp_id 等）
+    DiffScope NewScope(const std::string& request_id,
+                       Side               side,
+                       const Tags&        base_tags = {});
+
     const DiffConfig& Config() const { return config_; }
 
 private:
+    friend class DiffScope;
+
     DiffClient() = default;
     ~DiffClient();
-
     bool InitInternal(DiffConfig config);
 
-    // Write 模板的实际实现（非模板，避免头文件膨胀）
-    void WriteImpl(
-        const std::string& request_id,
-        const std::string& key,
-        Side               side,
-        const DiffValue&   value,
-        const Tags&        tags
-    );
+    // DiffScope 内部调用
+    void EnqueueSingle(const std::string& request_id,
+                       const std::string& key,
+                       Side               side,
+                       const DiffValue&   value,
+                       const Tags&        tags);
+
+    void EnqueueBatch(const std::string& request_id,
+                      const std::string& key,
+                      Side               side,
+                      const FieldList&   fields,
+                      const Tags&        tags);
 
     DiffConfig                   config_;
     std::unique_ptr<AsyncWriter> writer_;
