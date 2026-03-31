@@ -114,3 +114,63 @@ TEST(GecDiffTest, WriteWhenDisabledDoesNotCrash) {
     // 批量路径：用户自己构造 DiffValue
     diff::Write(Group::BASE, "req", FieldList{{"a", DiffValue(1)}, {"b", DiffValue(2.0)}});
 }
+
+// =========================================================================
+// 用户调用示例（模拟真实业务场景）
+// =========================================================================
+
+// 场景 1：推荐系统 CTR 打分，对照组 vs 实验组单值对比
+TEST(UserUsageTest, SingleValueCtrScore) {
+    std::string request_id = "rec_req_abc123";
+    Tags tags = {{"scene", "homepage"}, {"uid", "10086"}};
+
+    // 旧模型打分（对照组）
+    double old_score = 0.312;
+    diff::Write(Group::BASE, request_id, "ctr_score", old_score, tags);
+
+    // 新模型打分（实验组）
+    double new_score = 0.328;
+    diff::Write(Group::TEST, request_id, "ctr_score", new_score, tags);
+}
+
+// 场景 2：特征工程迁移，批量 diff 多个特征值
+TEST(UserUsageTest, BatchFeatureMapDiff) {
+    std::string request_id = "feat_req_xyz789";
+    Tags tags = {{"region", "ROW"}};
+
+    // 旧特征抽取结果
+    diff::Write(Group::BASE, request_id, FieldList{
+        {"age_bucket",  DiffValue(3)},
+        {"city_level",  DiffValue(1)},
+        {"is_new_user", DiffValue(false)},
+        {"item_price",  DiffValue(99.9)},
+    }, tags);
+
+    // 新特征抽取结果
+    diff::Write(Group::TEST, request_id, FieldList{
+        {"age_bucket",  DiffValue(3)},
+        {"city_level",  DiffValue(2)},      // 变化
+        {"is_new_user", DiffValue(false)},
+        {"item_price",  DiffValue(99.9)},
+    }, tags);
+}
+
+// 场景 3：下游服务返回 JSON 结构体对比
+TEST(UserUsageTest, JsonResponseDiff) {
+    std::string request_id = "api_req_def456";
+    Tags tags = {{"caller", "rank_service"}};
+
+    std::string old_resp = R"({"code":0,"items":[1,2,3]})";
+    std::string new_resp = R"({"code":0,"items":[1,2,4]})";
+
+    GecDiff::Write(Group::BASE, request_id, "rank_result",
+                   DiffValue::Json(old_resp), tags);
+    GecDiff::Write(Group::TEST, request_id, "rank_result",
+                   DiffValue::Json(new_resp), tags);
+}
+
+// 场景 4：不传 tags（可选参数缺省）
+TEST(UserUsageTest, WriteWithoutTags) {
+    diff::Write(Group::BASE, "req_notag", "score", 0.5f);
+    diff::Write(Group::TEST, "req_notag", "score", 0.6f);
+}
