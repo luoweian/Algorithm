@@ -7,7 +7,7 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(gec_diff_test
     test_diff_value.cpp
-    test_diff_client.cpp
+    test_gec_diff.cpp
 )
 
 target_link_libraries(gec_diff_test

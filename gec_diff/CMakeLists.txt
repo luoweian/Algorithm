@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(gec_diff STATIC
     src/diff_value.cpp
     src/async_writer.cpp
-    src/diff_client.cpp
+    src/gec_diff.cpp
 )
 
 target_include_directories(gec_diff

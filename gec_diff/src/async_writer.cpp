@@ -1,7 +1,6 @@
 #include "async_writer.h"
 
 #include <chrono>
-#include <cstdlib>
 #include <stdexcept>
 
 namespace diff {
@@ -21,26 +20,10 @@ void WriteInt64(std::string& out, int64_t v) {
 
 } // namespace
 
-// ---- 线程数解析 ----
-int AsyncWriter::ResolveThreadPoolSize(const DiffConfig& config) {
-    // 优先级 1：config 显式指定
-    if (config.thread_pool_size > 0) return config.thread_pool_size;
-
-    // 优先级 2：环境变量 GEC_DIFF_THREAD_POOL_SIZE
-    const char* env = std::getenv("GEC_DIFF_THREAD_POOL_SIZE");
-    if (env) {
-        int n = std::atoi(env);
-        if (n > 0) return n;
-    }
-
-    // 优先级 3：默认单线程
-    return 1;
-}
-
 // ---- 构造 / 析构 ----
-AsyncWriter::AsyncWriter(const DiffConfig& config, std::unique_ptr<MQProducer> producer)
-    : config_(config), producer_(std::move(producer)) {
-    int n = ResolveThreadPoolSize(config);
+AsyncWriter::AsyncWriter(WriterConfig config, std::unique_ptr<MQProducer> producer)
+    : config_(std::move(config)), producer_(std::move(producer)) {
+    int n = config_.thread_pool_size > 0 ? config_.thread_pool_size : 1;
     workers_.reserve(n);
     for (int i = 0; i < n; ++i) {
         workers_.emplace_back(&AsyncWriter::WorkerLoop, this);
@@ -58,7 +41,7 @@ AsyncWriter::~AsyncWriter() {
 // ---- Enqueue ----
 bool AsyncWriter::Enqueue(PendingMessage msg) {
     std::unique_lock<std::mutex> lock(mu_);
-    if (static_cast<int>(queue_.size()) >= config_.async_queue_size) {
+    if (static_cast<int>(queue_.size()) >= config_.queue_size) {
         drop_count_.fetch_add(1);
         return false;
     }
@@ -79,7 +62,7 @@ void AsyncWriter::Flush() {
     }
 }
 
-// ---- WorkerLoop（每个线程运行） ----
+// ---- WorkerLoop ----
 void AsyncWriter::WorkerLoop() {
     std::vector<PendingMessage> batch;
     batch.reserve(kBatchSize);
@@ -99,7 +82,6 @@ void AsyncWriter::WorkerLoop() {
         }
 
         for (auto& msg : batch) {
-            // BASE/TEST 分 topic 发送，Flink 从两个 topic 做 Stream Join
             std::string topic = config_.service_name + ".diff."
                 + (msg.group == Group::BASE ? "base" : "test");
             if (!producer_->Send(topic, Serialize(msg))) {
